@@ -1,8 +1,6 @@
 <template>
-  <section class="bg-gray-100 border-b-[1px] border-gray-300 ">
-    <div class="container min-h-[95vh] ">
-      
-
+  <section class="bg-gray-100 border-b-[1px] border-gray-300">
+    <div class="container min-h-[92vh]">
       <div class="flex items-center justify-evenly pt-[20vh]">
         <div class="w-full">
           <h1 class="text-5xl font-extrabold pt-10">
@@ -27,6 +25,84 @@
           nostrum deserunt itaque provident, asperiores mollitia cupiditate
           pariatur autem quibusdam! Excepturi?
         </h2>
+        <div class="border-2 py-72 mt-10">
+          une image/animation?
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h3 class="text-center text-gray-400 font-light text-xl">
+      Ils m'ont fait confiance :
+    </h3>
+    <div class="block xl:w-4/5 mx-auto">
+      <div
+        class="
+          lg:px-52
+          sm:px-20
+          grid
+          md:grid-cols-2
+          lg:grid-cols-4
+          gap-8
+          items-center
+          mt-10
+        "
+      >
+        <img
+          class="
+            max-w-20 max-h-16
+            pt-1
+            block
+            mx-auto
+            grayscale
+            transition
+            ease-in-out
+            opacity-80
+            hover:cursor-pointer hover:grayscale-0
+          "
+          src="./../assets/Capgemini_Logo.svg"
+        />
+        <img
+          class="
+            max-h-10
+            block
+            pb-1
+            mx-auto
+            grayscale
+            transition
+            ease-in-out
+            opacity-80
+            hover:cursor-pointer hover:grayscale-0
+          "
+          src="./../assets/logo-scribe.svg"
+        />
+        <img
+          class="
+            max-w-20 max-h-16
+            block
+            mx-auto
+            grayscale
+            transition
+            ease-in-out
+            opacity-80
+            hover:cursor-pointer hover:grayscale-0
+          "
+          src="./../assets/projetdemocratia.png"
+        />
+        <img
+          class="
+            max-w-20 max-h-16
+            block
+            mx-auto
+            grayscale
+            transition
+            ease-in-out
+            opacity-80
+            hover:cursor-pointer hover:grayscale-0
+          "
+          src="./../assets/nova-crete-logo.png"
+        />
       </div>
     </div>
   </section>
@@ -35,10 +111,11 @@
 <script lang="ts" setup>
 import { onMounted, ref } from "vue";
 import anime from "animejs/lib/anime.es.js";
+import Typewriter from 'typewriter-effect/dist/core';
 
 var type = ref();
 var wish = ref();
-const imgSrc = ref("./src/assets/particulier-hero.svg");
+const imgSrc = ref("./particulier-hero.svg");
 
 onMounted(() => {
   var typewriterType = new Typewriter(type.value, {
@@ -80,7 +157,7 @@ onMounted(() => {
     )
     .deleteAll()
     .callFunction(() => {
-      imgSrc.value = "./src/assets/commercant-hero.svg";
+      imgSrc.value = "./commercant-hero.svg";
       anime({
         targets: "#hero-img",
         rotate: "1turn",
@@ -101,7 +178,7 @@ onMounted(() => {
     )
     .deleteAll()
     .callFunction(() => {
-      imgSrc.value = "./src/assets/association-hero.svg";
+      imgSrc.value = "./association-hero.svg";
       anime({
         targets: "#hero-img",
         rotate: "1turn",

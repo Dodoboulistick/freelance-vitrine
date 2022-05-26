@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container min-h-[87vh]">
     <div class="flex items-center w-4/5 mx-auto pt-32">
       <img class="w-52 rounded-full" src="./../assets/moi.jpg" />
       <div class="relative px-10 font-semibold">

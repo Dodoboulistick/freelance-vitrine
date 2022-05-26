@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-100">
+  <div class="bg-gray-100 h-[8vh]">
     <div class="container relative py-4 px-4 sm:px-6 lg:px-8" id="home">
       <nav
         class="relative flex items-center justify-between sm:h-10"
@@ -117,7 +117,7 @@
           >
           <div class="inline-block h-[20px] w-[1px] bg-gray-500"></div>
           <a
-            href="https://medium.com/scribe-ai"
+            href="https://www.linkedin.com/in/dorian-mailhe/"
             target="_blank"
             class="
               block
