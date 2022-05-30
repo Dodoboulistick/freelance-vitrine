@@ -14,7 +14,7 @@
           dolor architecto eius.
         </h1>
         <h3>
-          Dorian Mailhé<br /><span class="text-green-500"
+          Dorian Mailhé<br /><span class="text-indigo-600"
             >Etudiant développeur web freelance</span
           >
         </h3>

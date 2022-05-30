@@ -1,9 +1,9 @@
 <template>
-  <section class="bg-gray-100 border-b-[1px] border-gray-300">
+  <section class="bg-gray-50 border-b-[1px] border-gray-300">
     <div class="container min-h-[92vh]">
       <div class="flex items-center justify-evenly pt-[20vh]">
         <div class="w-full">
-          <h1 class="text-5xl font-extrabold pt-10">
+          <h1 class="text-6xl font-extrabold pt-10">
             Vous êtes <span ref="type"></span><br />et vous avez
             <span ref="wish"></span>
           </h1>
@@ -13,27 +13,33 @@
     </div>
   </section>
 
-  <section class="py-20">
+  <section id="main" class="overflow-hidden relative">
+    <div
+      class="rect-bg w-[23vw] h-[40vh] absolute top-52 opacity-10 z-0"
+    ></div>
+    <div
+      class="rect-bg w-[30vw] h-[40vh] absolute top-0 right-0 opacity-10 z-0"
+    ></div>
     <div class="container">
-      <div class="text-center w-4/5 mx-auto">
-        <h1 class="text-5xl font-extrabold">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      <div class="text-center relative">
+        <h1 class="block w-3/5 mx-auto text-7xl font-extrabold z-50 pt-36">
+          Soyez visibible<br /><span class="text-indigo-600"
+            >sur internet</span
+          >
         </h1>
-        <h2 class="mt-4">
+        <h2 class="block w-4/5 mx-auto mt-4 text-gray-500 text-xl z-50">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat
           porro facere dicta et atque fuga ab voluptatem veritatis impedit
           nostrum deserunt itaque provident, asperiores mollitia cupiditate
           pariatur autem quibusdam! Excepturi?
         </h2>
-        <div class="border-2 py-72 mt-10">
-          une image/animation?
-        </div>
+        <img class="w-[70vw] mx-auto mt-16 !z-50" src="/mock-website.svg" />
       </div>
     </div>
   </section>
 
-  <section>
-    <h3 class="text-center text-gray-400 font-light text-xl">
+  <section class="bg-gray-800 py-36">
+    <h3 class="text-center text-gray-400 font-medium text-xl">
       Ils m'ont fait confiance :
     </h3>
     <div class="block xl:w-4/5 mx-auto">
@@ -59,6 +65,8 @@
             transition
             ease-in-out
             opacity-80
+            brightness-200
+            hover:brightness-100
             hover:cursor-pointer hover:grayscale-0
           "
           src="./../assets/Capgemini_Logo.svg"
@@ -73,6 +81,7 @@
             transition
             ease-in-out
             opacity-80
+            brightness-200
             hover:cursor-pointer hover:grayscale-0
           "
           src="./../assets/logo-scribe.svg"
@@ -86,9 +95,11 @@
             transition
             ease-in-out
             opacity-80
+            brightness-200
+            hover:brightness-100
             hover:cursor-pointer hover:grayscale-0
           "
-          src="./../assets/projetdemocratia.png"
+          src="./../assets/nova-crete-logo.png"
         />
         <img
           class="
@@ -99,9 +110,11 @@
             transition
             ease-in-out
             opacity-80
+            brightness-200
+            hover:brightness-100
             hover:cursor-pointer hover:grayscale-0
           "
-          src="./../assets/nova-crete-logo.png"
+          src="./../assets/projetdemocratia.png"
         />
       </div>
     </div>
@@ -111,7 +124,7 @@
 <script lang="ts" setup>
 import { onMounted, ref } from "vue";
 import anime from "animejs/lib/anime.es.js";
-import Typewriter from 'typewriter-effect/dist/core';
+import Typewriter from "typewriter-effect/dist/core";
 
 var type = ref();
 var wish = ref();
@@ -119,11 +132,13 @@ const imgSrc = ref("./particulier-hero.svg");
 
 onMounted(() => {
   var typewriterType = new Typewriter(type.value, {
-    delay: 70,
+    delay: 40,
+    deleteSpeed: 20,
   });
 
   var typewriterWish = new Typewriter(wish.value, {
-    delay: 70,
+    delay: 40,
+    deleteSpeed: 20,
   });
 
   anime({
@@ -149,28 +164,7 @@ onMounted(() => {
         .querySelectorAll(".Typewriter__cursor")[0]
         .classList.add("hidden")
     )
-    .pauseFor(5000)
-    .callFunction(() =>
-      document
-        .querySelectorAll(".Typewriter__cursor")[0]
-        .classList.remove("hidden")
-    )
-    .deleteAll()
-    .callFunction(() => {
-      imgSrc.value = "./commercant-hero.svg";
-      anime({
-        targets: "#hero-img",
-        rotate: "1turn",
-        duration: 800,
-      });
-    })
-    .typeString('<span class="text-sky-400">un commerçant</span>')
-    .callFunction(() =>
-      document
-        .querySelectorAll(".Typewriter__cursor")[0]
-        .classList.add("hidden")
-    )
-    .pauseFor(5000)
+    .pauseFor(5250)
     .callFunction(() =>
       document
         .querySelectorAll(".Typewriter__cursor")[0]
@@ -191,6 +185,27 @@ onMounted(() => {
         .querySelectorAll(".Typewriter__cursor")[0]
         .classList.add("hidden")
     )
+    .pauseFor(6000)
+    .callFunction(() =>
+      document
+        .querySelectorAll(".Typewriter__cursor")[0]
+        .classList.remove("hidden")
+    )
+    .deleteAll()
+    .callFunction(() => {
+      imgSrc.value = "./professionnel-hero.svg";
+      anime({
+        targets: "#hero-img",
+        rotate: "1turn",
+        duration: 800,
+      });
+    })
+    .typeString('<span class="text-indigo-600">un professionnel</span>')
+    .callFunction(() =>
+      document
+        .querySelectorAll(".Typewriter__cursor")[0]
+        .classList.add("hidden")
+    )
     .start();
 
   typewriterWish
@@ -199,13 +214,13 @@ onMounted(() => {
         .querySelectorAll(".Typewriter__cursor")[1]
         .classList.add("hidden")
     )
-    .pauseFor(3000)
+    .pauseFor(2000)
     .callFunction(() =>
       document
         .querySelectorAll(".Typewriter__cursor")[1]
         .classList.remove("hidden")
     )
-    .typeString('<span class="text-red-400">une passion</span>.')
+    .typeString('<span class="text-red-400">une passion à partager</span>.')
     .pauseFor(2000)
     .deleteAll()
     .callFunction(() =>
@@ -213,13 +228,15 @@ onMounted(() => {
         .querySelectorAll(".Typewriter__cursor")[1]
         .classList.add("hidden")
     )
-    .pauseFor(3000)
+    .pauseFor(2250)
     .callFunction(() =>
       document
         .querySelectorAll(".Typewriter__cursor")[1]
         .classList.remove("hidden")
     )
-    .typeString('<span class="text-sky-400">un produit</span>.')
+    .typeString(
+      '<span class="text-green-400">envie de vous faire connaître</span>.'
+    )
     .pauseFor(2000)
     .deleteAll()
     .callFunction(() =>
@@ -227,13 +244,15 @@ onMounted(() => {
         .querySelectorAll(".Typewriter__cursor")[1]
         .classList.add("hidden")
     )
-    .pauseFor(3000)
+    .pauseFor(2250)
     .callFunction(() =>
       document
         .querySelectorAll(".Typewriter__cursor")[1]
         .classList.remove("hidden")
     )
-    .typeString('<span class="text-green-400">un objectif</span>.')
+    .typeString(
+      '<span class="text-indigo-600">des produits ou des services à vendre</span>.'
+    )
     .callFunction(() =>
       document
         .querySelectorAll(".Typewriter__cursor")[1]
@@ -242,3 +261,14 @@ onMounted(() => {
     .start();
 });
 </script>
+
+<style scoped>
+.rect-bg {
+  background-image: url("/test3.png");
+  background-repeat: repeat;
+}
+
+#main {
+  background: linear-gradient(0deg, #202938 50%, white 0);
+}
+</style>

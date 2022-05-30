@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-100 h-[8vh]">
+  <div class="bg-gray-50 h-[8vh]">
     <div class="container relative py-4 px-4 sm:px-6 lg:px-8" id="home">
       <nav
         class="relative flex items-center justify-between sm:h-10"
@@ -81,7 +81,7 @@
               mx-auto
               w-fit
               lg:mx-0 lg:my-0 lg:inline-block
-              hover:text-black
+              hover:text-indigo-600
               transition
               ease-in-out
             "
@@ -95,7 +95,7 @@
               mx-auto
               w-fit
               lg:mx-0 lg:my-0 lg:inline-block
-              hover:text-black
+              hover:text-indigo-600
               transition
               ease-in-out
             "
@@ -109,7 +109,7 @@
               mx-auto
               w-fit
               lg:mx-0 lg:my-0 lg:inline-block
-              hover:text-black
+              hover:text-indigo-600
               transition
               ease-in-out
             "

@@ -70,12 +70,12 @@
                 class="
                   block
                   mx-auto
-                  bg-green-500
+                  bg-indigo-600
                   px-4
                   py-2
                   text-white
                   rounded-md
-                  hover:cursor-pointer hover:bg-green-600
+                  hover:cursor-pointer hover:bg-indigo-700
                 "
               />
               <p v-if="isSuccess" class="text-green-400 text-center mt-3">
