@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Référencement puissant",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat porro facere dicta et atque fuga ab voluptatem veritatis impedit nostrum deserunt itaque provident, asperiores mollitia cupiditate pariatur autem quibusdam! Excepturi?",
+    "icon": "bi bi-search"
+  },
+  {
+    "id": 2,
+    "title": "Chargement rapide",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat porro facere dicta et atque fuga ab voluptatem veritatis impedit nostrum deserunt itaque provident, asperiores mollitia cupiditate pariatur autem quibusdam! Excepturi?",
+    "icon": "bi bi-lightning-charge"
+  },
+  {
+    "id": 3,
+    "title": "Design adaptatif",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat porro facere dicta et atque fuga ab voluptatem veritatis impedit nostrum deserunt itaque provident, asperiores mollitia cupiditate pariatur autem quibusdam! Excepturi?",
+    "icon": "bi bi-phone-flip"
+  },
+  {
+    "id": 4,
+    "title": "Accessibilité profonde",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat porro facere dicta et atque fuga ab voluptatem veritatis impedit nostrum deserunt itaque provident, asperiores mollitia cupiditate pariatur autem quibusdam! Excepturi?",
+    "icon": "bi bi-globe2"
+  },
+  {
+    "id": 5,
+    "title": "Développement éco-reponsable",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat porro facere dicta et atque fuga ab voluptatem veritatis impedit nostrum deserunt itaque provident, asperiores mollitia cupiditate pariatur autem quibusdam! Excepturi?",
+    "icon": "bi bi-recycle"
+  },
+  {
+    "id": 6,
+    "title": "Tarifs concurrentiels",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat porro facere dicta et atque fuga ab voluptatem veritatis impedit nostrum deserunt itaque provident, asperiores mollitia cupiditate pariatur autem quibusdam! Excepturi?",
+    "icon": "bi bi-bank"
+  }
+]

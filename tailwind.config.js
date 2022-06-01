@@ -4,7 +4,11 @@ module.exports = {
     container: {
       center: true,
     },
-    extend: {},
+    extend: {
+      spacing: {
+        mid: "calc(50% - 64px)",
+      },
+    },
   },
   plugins: [],
-}
+};

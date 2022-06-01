@@ -11,10 +11,10 @@
               <span class="sr-only">Workflow</span>
               dorian-mailhe.fr
             </router-link>
-            <div class="-mr-2 flex items-center lg:hidden">
+            <div class="-mr-2 flex items-center md:hidden">
               <button
                 type="button"
-                onclick="handleClick()"
+                @click="handleClick"
                 class="
                   bg-white
                   rounded-md
@@ -53,16 +53,20 @@
         </div>
         <div
           id="links"
+          :class="{ hidden: hideNav }"
           class="
-            hidden
-            lg:flex
-            lg:w-fit
-            lg:border-none
-            lg:mr-10
-            lg:pr-4
-            lg:space-x-8
-            lg:rounded-0
-            lg:static
+            md:flex
+            md:w-fit
+            md:border-none
+            md:mr-10
+            md:pr-4
+            md:space-x-8
+            md:rounded-0
+            md:static
+            md:bg-transparent
+            md:text-lg
+            text-xl
+            bg-white
             absolute
             top-16
             w-full
@@ -71,6 +75,7 @@
             rounded-md
             font-medium
             text-gray-500
+            z-[999]
           "
         >
           <router-link
@@ -115,12 +120,14 @@
             "
             >Demander un devis</router-link
           >
-          <div class="inline-block h-[20px] w-[1px] bg-gray-500"></div>
+          <div
+            class="h-[20px] w-[1px] bg-gray-500 hidden md:inline-block"
+          ></div>
           <a
             href="https://www.linkedin.com/in/dorian-mailhe/"
             target="_blank"
             class="
-              block
+              hidden
               my-10
               mx-auto
               w-6
@@ -128,10 +135,30 @@
               transition
               ease-in-out
             "
-            ><img class="opacity-50 hover:opacity-100" src="./../assets/linkedin-plain.svg" />
+            ><img
+              class="opacity-50 hover:opacity-100"
+              src="./../assets/linkedin-plain.svg"
+            />
           </a>
         </div>
       </nav>
     </div>
   </div>
 </template>
+
+<script lang="ts">
+import { defineComponent, ref } from "vue";
+
+export default defineComponent({
+  name: "Navbar",
+  setup() {
+    const hideNav = ref(true);
+
+    const handleClick = () => (hideNav.value = !hideNav.value);
+    return {
+      hideNav,
+      handleClick,
+    };
+  },
+});
+</script>

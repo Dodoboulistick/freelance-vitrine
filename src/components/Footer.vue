@@ -1,5 +1,15 @@
 <template>
-  <footer class="bg-gray-900 text-white flex items-center h-[5vh]">
+  <footer
+    class="
+      bg-gray-800
+      text-white
+      flex
+      items-center
+      h-[10vh]
+      md:h-[8vh]
+      lg:h-[5vh]
+    "
+  >
     <div class="container">
       <p class="text-center">
         Tous droits réservés - Dorian Mailhé &copy;
