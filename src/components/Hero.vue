@@ -1,7 +1,7 @@
 <template>
   <section id="hero" class="h-screen text-slate-800 border border-b-1">
     <div class="container">
-    <div class="py-16">
+      <div class="py-16">
         <div class="text-center pt-[15vh]">
           <h1 class="text-7xl font-extrabold mb-2">Hello, moi c'est Dorian</h1>
           <h2 class="text-2xl">
@@ -20,14 +20,18 @@
         </div>
       </div>
 
-      <img class="w-6/12 mx-auto  " src="./../assets/mock-website.svg" />
+      <img
+        class="w-6/12 mx-auto"
+        src="./../assets/mock-website.svg"
+        alt="Mock website image"
+      />
     </div>
   </section>
 
   <section class="pt-24">
-      <div class="container">
-          <h2>Je fais des supers sites</h2>
-      </div>
+    <div class="container">
+      <h2>Je fais des supers sites</h2>
+    </div>
   </section>
 </template>
 
@@ -37,7 +41,7 @@
 <style scoped>
 section#hero {
   background-image: url("./../assets/bg.png");
-  background-position: center; 
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }

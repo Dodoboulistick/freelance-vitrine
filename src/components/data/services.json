@@ -2,37 +2,37 @@
   {
     "id": 1,
     "title": "Référencement puissant",
-    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat porro facere dicta et atque fuga ab voluptatem veritatis impedit nostrum deserunt itaque provident, asperiores mollitia cupiditate pariatur autem quibusdam! Excepturi?",
+    "description": "Le SEO est un métier qui demande une attention particulière. Je vous aide à optimiser votre site web pour attirer votre clientèle et vous permettre d'augmenter votre visibilité sur les moteurs de recherche.",
     "icon": "bi bi-search"
   },
   {
     "id": 2,
     "title": "Chargement rapide",
-    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat porro facere dicta et atque fuga ab voluptatem veritatis impedit nostrum deserunt itaque provident, asperiores mollitia cupiditate pariatur autem quibusdam! Excepturi?",
+    "description": "Pour éviter de faire fuir les visiteurs les plus impatients, je m'applique à développer votre site web pour qu'il soit plus rapide et plus facilement accessible.",
     "icon": "bi bi-lightning-charge"
   },
   {
     "id": 3,
     "title": "Design adaptatif",
-    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat porro facere dicta et atque fuga ab voluptatem veritatis impedit nostrum deserunt itaque provident, asperiores mollitia cupiditate pariatur autem quibusdam! Excepturi?",
+    "description": "Pour que vous ne manquiez aucun utilisateur potentiel, je m'assure que votre site web s'affiche correctement pour tous les types d'écrans.",
     "icon": "bi bi-phone-flip"
   },
   {
     "id": 4,
-    "title": "Accessibilité profonde",
-    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat porro facere dicta et atque fuga ab voluptatem veritatis impedit nostrum deserunt itaque provident, asperiores mollitia cupiditate pariatur autem quibusdam! Excepturi?",
+    "title": "Pleine accessibilité",
+    "description": "Je développe votre site web en m'assurant que les personnes en situation de handicap peuvent y accéder facilement.",
     "icon": "bi bi-globe2"
   },
   {
     "id": 5,
     "title": "Développement éco-reponsable",
-    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat porro facere dicta et atque fuga ab voluptatem veritatis impedit nostrum deserunt itaque provident, asperiores mollitia cupiditate pariatur autem quibusdam! Excepturi?",
+    "description": "Parce que la qualité du code a bel et bien un impact écologique, je m'applique à développer votre site web pour qu'il soit plus éco-responsable.",
     "icon": "bi bi-recycle"
   },
   {
     "id": 6,
-    "title": "Tarifs concurrentiels",
-    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat porro facere dicta et atque fuga ab voluptatem veritatis impedit nostrum deserunt itaque provident, asperiores mollitia cupiditate pariatur autem quibusdam! Excepturi?",
+    "title": "Tarifs adaptés",
+    "description": "Je voudrais que votre site web soit l'outil qui vous permette de développer votre entreprise. Je vous propose des tarifs adaptés à votre budget.",
     "icon": "bi bi-bank"
   }
 ]

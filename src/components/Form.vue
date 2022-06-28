@@ -77,6 +77,10 @@
         </div>
       </div>
     </div>
+    <p class="text-slate-500 italic text-sm px-5">
+      Pour un devis le plus précis possible, n'oubliez pas de me dire le nom du
+      plan souhaité et les fonctionnalités basiques que vous attendez.
+    </p>
   </form>
 </template>
 

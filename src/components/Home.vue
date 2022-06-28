@@ -1,4 +1,4 @@
-<template>
+<template class="scroll-smooth">
   <section class="bg-gray-50 border-b-[1px] border-gray-300">
     <div class="container min-h-[92vh]">
       <div class="lg:flex items-center justify-evenly pt-[10vh] lg:pt-[20vh]">
@@ -23,115 +23,239 @@
           id="hero-img"
           class="h-[400px] max-w-[90vw] mx-auto"
           :src="imgSrc"
+          alt="Illustration by storyset"
         />
       </div>
     </div>
   </section>
 
   <section id="main" class="overflow-hidden relative">
-    <div class="rect-bg w-[23vw] h-[40vh] absolute top-80 opacity-10 z-0"></div>
+    <div class="rect-bg w-[23vw] h-[40vh] absolute top-96 opacity-10 z-0"></div>
     <div
       class="rect-bg w-[30vw] h-[40vh] absolute top-0 right-0 opacity-10 z-0"
     ></div>
     <div class="container">
       <div class="text-center relative">
-        <div class="py-20 md:py-32">
+        <div class="py-20 md:py-20">
           <h1
-            class="block w-3/5 mx-auto text-6xl lg:text-7xl font-extrabold z-50"
+            class="
+              block
+              w-3/5
+              mx-auto
+              text-6xl
+              lg:text-7xl
+              font-extrabold
+              z-50
+              my-10
+            "
           >
             Soyez visible<br /><span class="text-indigo-600">sur internet</span>
           </h1>
           <h2 class="block w-4/5 mx-auto mt-4 text-gray-500 text-xl z-50">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat
-            porro facere dicta et atque fuga ab voluptatem veritatis impedit
-            nostrum deserunt itaque provident, asperiores mollitia cupiditate
-            pariatur autem quibusdam! Excepturi?
+            Par manque de visibilité, un trop grand nombre de services, de
+            produits ou d'actions ne sont pas connus du public, alors qu'en même
+            temps ce dernier aurait des besoins ou envies en la matière
           </h2>
         </div>
 
         <img
-          class="w-[95vw] md:w-[70vw] mx-auto !z-50"
+          class="w-[90vw] md:w-[60vw] mx-auto !z-50 shadow-lg"
           src="/mock-website.svg"
+          alt="Mock website illustration"
         />
       </div>
     </div>
   </section>
 
   <section class="bg-gray-800 py-24">
-    <h3 class="text-center text-gray-400 font-medium text-xl">
-      Ils m'ont fait confiance :
-    </h3>
-    <div class="block xl:w-4/5 mx-auto">
-      <div
-        class="
-          lg:px-52
-          sm:px-20
-          grid
-          md:grid-cols-2
-          lg:grid-cols-4
-          gap-8
-          items-center
-          mt-10
-        "
-      >
-        <img
+    <div class="container">
+      <div class="text-center pt-10 pb-20">
+        <h3
+          class="text-gray-200 uppercase font-semibold tracking-widest text-xl"
+        >
+          Plans
+        </h3>
+        <h1 class="text-white font-bold text-5xl py-3">
+          Le prix juste pour vous, qui que vous soyez
+        </h1>
+        <p class="text-gray-200 text-xl font-light md:w-3/5 md:mx-auto">
+          Trouvez le plan qui convient le mieux à vos attentes, de la simple
+          commande de page web au suivi le plus total dans la mise en place de
+          la solution
+        </p>
+      </div>
+      <div class="lg:grid lg:grid-cols-10 items-center xl:w-4/5 mx-auto px-5">
+        <div
           class="
-            max-w-20 max-h-16
-            pt-1
-            block
+            lg:col-span-3
+            w-full
+            md:w-2/3
+            lg:mx-0
+            my-5
             mx-auto
-            grayscale
-            transition
-            ease-in-out
-            opacity-80
-            brightness-200
-            hover:brightness-100 hover:cursor-pointer hover:grayscale-0
+            lg:w-full
+            rounded-r-xl
+            lg:rounded-r-none
+            rounded-l-xl
+            overflow-hidden
           "
-          src="./../assets/Capgemini_Logo.svg"
-        />
-        <img
+        >
+          <div class="bg-white text-center py-10 border border-b-[1px]">
+            <h1 class="font-semibold text-2xl mb-3">Basique</h1>
+            <p class="text-gray-500 font-medium text-sm">à partir de</p>
+            <h2 class="font-extrabold text-7xl text-black">150€</h2>
+          </div>
+          <div class="bg-gray-50 p-10">
+            <ul>
+              <li>
+                <i class="bi bi-check-lg"></i> Une ou plusieurs pages web
+                simples
+              </li>
+              <li><i class="bi bi-check-lg"></i> Idéal pour un site vitrine</li>
+              <li><i class="bi bi-check-lg"></i> Premiers jets en 1-3 jours</li>
+            </ul>
+            <a
+              href="#contact-form"
+              class="
+                mt-5
+                block
+                text-indigo-600
+                font-medium
+                text-center
+                w-100
+                rounded-lg
+                py-2
+                bg-white
+                shadow-md
+              "
+              >Demander un devis</a
+            >
+          </div>
+        </div>
+
+        <div class="lg:col-span-4 w-full md:w-3/4 lg:w-full mx-auto relative">
+          <div
+            class="
+              flex
+              absolute
+              bg-indigo-600
+              rounded-full
+              h-8
+              items-center
+              justify-center
+              -top-4
+              text-center
+              z-[999]
+              lg:left-1/3
+              md:left-[37%]
+              left-[30vw]
+            "
+          >
+            <p class="text-white px-4 uppercase tracking-widest">Populaire</p>
+          </div>
+          <div
+            class="
+              border-indigo-600 border-2
+              rounded-xl
+              overflow-hidden
+              relative
+            "
+          >
+            <div class="bg-white text-center py-10 border border-b-[1px]">
+              <h1 class="font-semibold text-2xl mb-3">Complet</h1>
+              <p class="text-gray-500 font-medium text-sm">à partir de</p>
+              <h2 class="font-extrabold text-7xl text-black">250€</h2>
+            </div>
+            <div class="bg-gray-50 p-10">
+              <ul>
+                <li><i class="bi bi-check-lg"></i> Nombre de pages illimité</li>
+                <li>
+                  <i class="bi bi-check-lg"></i> Nom de domaine offert la
+                  première année
+                </li>
+                <li>
+                  <i class="bi bi-check-lg"></i> Gestion de la solution
+                  d'hébergement du site
+                </li>
+                <li>
+                  <i class="bi bi-check-lg"></i> Gestion du SEO pour une
+                  visibilité accrue
+                </li>
+                <li><i class="bi bi-check-lg"></i> Mailing intégré</li>
+              </ul>
+              <a
+                href="#contact-form"
+                class="
+                  mt-5
+                  block
+                  text-white
+                  font-medium
+                  text-center
+                  w-100
+                  rounded-lg
+                  py-2
+                  bg-indigo-600
+                  shadow-md
+                  hover:bg-white hover:text-indigo-600
+                  transition
+                  ease-in-out
+                "
+                >Demander un devis</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div
           class="
-            max-h-10
-            block
-            pb-1
+            lg:col-span-3
+            w-full
+            md:w-2/3
+            lg:mx-0
+            my-5
             mx-auto
-            grayscale
-            transition
-            ease-in-out
-            opacity-80
-            brightness-200
-            hover:cursor-pointer hover:grayscale-0
+            lg:w-full
+            rounded-r-xl
+            lg:rounded-l-none
+            rounded-l-xl
+            overflow-hidden
           "
-          src="./../assets/logo-scribe.svg"
-        />
-        <img
-          class="
-            max-w-20 max-h-16
-            block
-            mx-auto
-            grayscale
-            transition
-            ease-in-out
-            opacity-80
-            brightness-200
-            hover:brightness-100 hover:cursor-pointer hover:grayscale-0
-          "
-          src="./../assets/nova-crete-logo.png"
-        />
-        <img
-          class="
-            max-w-20 max-h-16
-            block
-            mx-auto
-            grayscale
-            transition
-            ease-in-out
-            opacity-80
-            brightness-200
-            hover:brightness-100 hover:cursor-pointer hover:grayscale-0
-          "
-          src="./../assets/projetdemocratia.png"
-        />
+        >
+          <div class="bg-white text-center py-10 border border-b-[1px]">
+            <h1 class="font-semibold text-2xl mb-3">Blog et E-commerce</h1>
+            <p class="text-gray-500 font-medium text-sm">à partir de</p>
+            <h2 class="font-extrabold text-7xl text-black">400€</h2>
+          </div>
+          <div class="bg-gray-50 p-10">
+            <ul>
+              <li>
+                <i class="bi bi-check-lg"></i> Tous les avantages du Complet
+              </li>
+              <li>
+                <i class="bi bi-check-lg"></i> Suivi accru dans le développement
+              </li>
+              <li>
+                <i class="bi bi-check-lg"></i> Choix de la technologie possible
+              </li>
+            </ul>
+            <a
+              href="#contact-form"
+              class="
+                mt-5
+                block
+                text-indigo-600
+                font-medium
+                text-center
+                w-100
+                rounded-lg
+                py-2
+                bg-white
+                shadow-md
+              "
+              >Demander un devis</a
+            >
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -187,6 +311,85 @@
             <p class="pb-3 text-gray-500">{{ item.description }}</p>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pt-16 pb-20">
+    <h3 class="text-center text-gray-400 font-medium text-xl">
+      Ils m'ont fait confiance :
+    </h3>
+    <div class="block xl:w-4/5 mx-auto">
+      <div
+        class="
+          lg:px-52
+          sm:px-20
+          grid
+          md:grid-cols-2
+          lg:grid-cols-4
+          gap-8
+          items-center
+          mt-10
+        "
+      >
+        <img
+          class="
+            max-w-20 max-h-16
+            pt-1
+            block
+            mx-auto
+            grayscale
+            transition
+            ease-in-out
+            opacity-50
+            hover:opacity-100 hover:cursor-pointer hover:grayscale-0
+          "
+          src="./../assets/Capgemini_Logo.svg"
+          alt="Capgemini logo"
+        />
+        <img
+          class="
+            max-h-10
+            block
+            pb-1
+            mx-auto
+            grayscale
+            transition
+            ease-in-out
+            opacity-50
+            hover:opacity-100 hover:cursor-pointer hover:grayscale-0
+          "
+          src="./../assets/logo-scribe.svg"
+          alt="Scribe logo"
+        />
+        <img
+          class="
+            max-w-20 max-h-16
+            block
+            mx-auto
+            grayscale
+            transition
+            ease-in-out
+            opacity-80
+            hover:opacity-100 hover:cursor-pointer hover:grayscale-0
+          "
+          src="./../assets/nova-crete-logo.png"
+          alt="Nova Crete logo"
+        />
+        <img
+          class="
+            max-w-20 max-h-16
+            block
+            mx-auto
+            grayscale
+            transition
+            ease-in-out
+            opacity-80
+            hover:opacity-100 hover:cursor-pointer hover:grayscale-0
+          "
+          src="./../assets/projetdemocratia.png"
+          alt="Projet Democratia logo"
+        />
       </div>
     </div>
   </section>
@@ -268,7 +471,10 @@
               </div>
             </div>
           </div>
-          <div class="lg:col-span-2 self-center px-3 md:px-10 py-10 bg-white">
+          <div
+            id="contact-form"
+            class="lg:col-span-2 self-center px-3 md:px-10 py-10 bg-white"
+          >
             <p class="font-semibold ml-3 mb-5">Envoyez-moi un message</p>
             <Form />
           </div>
